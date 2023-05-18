@@ -3,7 +3,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
     return (
         <Html lang="en">
-            <Head />
+            <Head title='Blog'>
+                <link rel="shortcut icon" href="/favicon.png" />
+            </Head>
             <body>
                 <Main />
                 <NextScript />
