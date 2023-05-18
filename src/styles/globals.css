@@ -12,7 +12,7 @@
   }
 
   body {
-    @apply flex h-full flex-col text-stone-600;
+    @apply flex h-full flex-col text-stone-600 bg-gray-100;
   }
 
   main {
