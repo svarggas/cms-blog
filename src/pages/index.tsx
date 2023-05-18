@@ -45,8 +45,8 @@ export const getStaticProps = async () => {
     return {
         props: {
             landing: response.items?.[0] || {},
-            revalidate: 1
-        }
+        },
+        revalidate: 60
     }
 }
 
