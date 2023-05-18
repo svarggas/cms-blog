@@ -18,8 +18,8 @@ const options: Options = {
     renderNode: {
         [BLOCKS.PARAGRAPH]: (node, children) => {
             if (
-                node.content.find(item =>
-                    item.marks?.find(mark => mark.type === 'code')
+                node.content.find((item: any) =>
+                    item.marks?.find((mark: any) => mark.type === 'code')
                 )
             ) {
                 return (
@@ -44,11 +44,10 @@ const options: Options = {
             }
         },
 
-        [INLINES.HYPERLINK]: (node) => {
-            const text = node.content.find(item => item.nodeType === 'text')?.value
+        [INLINES.HYPERLINK]: (node, children) => {
             return (
                 <a href={node.data.uri} target='_blank' rel='noopener noreferrer'>
-                    {text}
+                    {children}
                 </a>
             )
         },
