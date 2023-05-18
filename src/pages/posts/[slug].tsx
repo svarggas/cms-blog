@@ -60,7 +60,7 @@ export const getStaticProps = async (
         props: {
             post: response?.items?.[0],
             preview,
-            revalidate: 60
+            revalidate: 1
         }
     }
 }
@@ -73,7 +73,7 @@ export const getStaticPaths = async () => {
 
     return {
         paths,
-        fallback: true
+        fallback: false
     }
 }
 
