@@ -15,7 +15,7 @@ const PostHeader: FC<PostHeaderPost> = ({ post }) => {
 
     return (
         <>
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <div className='hidden md:flex md:justify-between md:items-center md:mb-10'>
                 <Avatar name={author.fields.name} picture={author.fields.picture} />
                 <DateComponent dateString={date} className='text-sm text-gray-400' />
