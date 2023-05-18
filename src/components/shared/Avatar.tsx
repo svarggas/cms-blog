@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import ContentfulImage from './ContentfulImage'
 
-import { picture } from '@/lib/interfaces/posts'
+import { picture } from '@/lib/interfaces/picture'
 
 interface AvatarProps {
     name: string,
