@@ -17,6 +17,7 @@ interface ContentfulImageProps extends ContentfulLoaderProps {
 }
 
 const ContentfulImage: FC<ContentfulImageProps> = (props) => {
+    // eslint-disable-next-line jsx-a11y/alt-text
     return <Image loader={contentfulLoader} {...props} />
 }
 
